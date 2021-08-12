@@ -1,0 +1,64 @@
+<view class="card">
+  <image mode="widthFix" src="/static/img/indexBackgroundImg.png"></image>
+  <view class="box">
+    <view class="content">
+      <view class="title">
+        <view class="schoolname">唐河谢岗实验学校</view>
+        <button>去签约</button>
+      </view>
+      <view class="detial">建议开通微信刷脸代扣，无需充值安全更便携</view>
+    </view>
+    <view class="info">
+      <text>姓名：陈功</text>
+      <text>班级：初一(2020级5班)</text>
+    </view>
+  </view>
+</view>
+<view class="tag">
+  <view class="tagname">
+    尊享权益
+  </view>
+  <view class="text">RESPECT MEMBERS</view>
+</view>
+<view class="banners">
+  <view class="item a">
+    <image class="bk" mode="widthFix" src="/static/img/itemBackground.png"></image>
+    <view class="option">
+      <view class="Blod">消费记录</view>
+      <view class="text">清晰明了</view>
+    </view>
+    <view class="bk" class="iconimg">
+      <image mode="aspectFit" src="/static/img/bill.png"></image>
+    </view>
+  </view>
+  <view class="item b">
+    <image class="bk" mode="widthFix" src="/static/img/itemBackground.png"></image>
+    <view class="option">
+      <view class="Blod">消费限额</view>
+      <view class="text">安全放心</view>
+    </view>
+    <view class="iconimg">
+      <image class="bk" mode="aspectFit" src="/static/img/money.png"></image>
+    </view>
+  </view>
+  <view class="item c">
+    <image class="bk" mode="widthFix" src="/static/img/itemBackground.png"></image>
+    <view class="option">
+      <view class="Blod">电子校园卡卡包</view>
+      <view class="text">查询方便快捷</view>
+    </view>
+    <view class="iconimg">
+      <image mode="aspectFit" src="/static/img/wallet.png"></image>
+    </view>
+  </view>
+  <view class="item d">
+    <image class="bk" mode="widthFix" src="/static/img/itemBackground.png"></image>
+    <view class="option">
+      <view class="Blod">校门考勤</view>
+      <view class="text">平安校园</view>
+    </view>
+    <view class="iconimg">
+      <image mode="aspectFit" src="/static/img/security.png"></image>
+    </view>
+  </view>
+</view>

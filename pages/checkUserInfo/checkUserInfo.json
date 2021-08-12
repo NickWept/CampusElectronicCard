@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "验证用户身份",
+  "usingComponents": {
+    "my-actionSheet":"/components/actionSheet/actionSheet",
+    "my-showModel":"/components/myShowModel/myShowModel"
+  }
+}

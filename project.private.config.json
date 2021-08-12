@@ -1,0 +1,60 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "index(首页)",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Login(选择登录)",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "loginByPhone(验证码登录)",
+          "pathName": "pages/loginByPhone/loginByPhone",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "apply(申请页面)",
+          "pathName": "pages/apply/apply",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "claim(领取卡包)",
+          "pathName": "pages/claim/claim",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "checkUserInfo(验证用户身份)",
+          "pathName": "pages/checkUserInfo/checkUserInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "completeClaim(完成领取)",
+          "pathName": "pages/completeClaim/completeClaim",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

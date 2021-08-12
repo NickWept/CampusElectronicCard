@@ -1,0 +1,151 @@
+/* 电子校园卡 */
+.schoolcard{
+  width: 90vw;
+  margin: 20rpx 5vw;
+}
+
+.schoolcard > .title {
+  padding-top: 20rpx;
+  font-weight: bolder;
+}
+
+.schoolcard > .cardinfo > image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.schoolcard > .cardinfo {
+  position: relative;
+  height: 392rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardinfo > .title, 
+.cardinfo > .info{
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  height: 40%;
+  margin-top: 40rpx;
+}
+
+.schoolname {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-weight: bolder;
+  color: white;
+  font-size: 40rpx;
+}
+
+.tag {
+  font-size: 25rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  position: relative;
+  color: white;
+  width: 180rpx;
+  text-align: center;
+}
+
+.tag::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180rpx;
+  height: 60rpx;
+  border-radius: 40rpx;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.info > .name,
+.info > .grade{
+  font-size: 25rpx;
+  color: white;
+}
+
+/* 银行卡 */
+.bankcard {
+  width: 90vw;
+  margin: 40rpx 5vw;
+}
+.bankcard > .content {
+  font-size: 30rpx;
+  margin-bottom: 15rpx;
+}
+
+.bankcard > .cardinfo > image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 322rpx;
+  z-index: -1;
+}
+
+.bankcard > .cardinfo {
+  position: relative;
+  height: 322rpx;
+  color: white;
+  font-weight: bolder;
+}
+
+.bankcard > .cardinfo > .box {
+  display: block;
+  padding: 5vw;
+}
+
+.bankinfo {
+  display: flex;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+
+.bankinfo > .name {
+  width: 25%;
+}
+
+.bankinfo > .content {
+  text-align: left;
+}
+
+.icon{
+  padding-right: 20rpx;
+}
+
+/* 尾部 */
+.tips {
+  font-size: 28rpx;
+  color: #878787;
+  text-align: center;
+  padding-top: 10rpx;
+}
+
+.btn{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  margin-bottom: 3vh;
+}
+
+button {
+  width: 90vw !important; 
+  height: 100rpx !important;
+  padding: 0 !important;
+  line-height: 100rpx !important;
+  font-weight: 0 !important;
+  border-radius: 15rpx !important; 
+  letter-spacing: 5rpx;
+  margin-top: 0rpx !important;
+  background: #00bd73;
+  color: white;
+}
+

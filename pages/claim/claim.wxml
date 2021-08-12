@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="title">
+    <text class="title1">校园消费全场景</text>
+    <text class="title2">想怎么付就怎么付</text>
+  </view>
+  <image mode="widthFix" src="/static/img/back3.png"></image>
+  <button>领取我的电子校园卡</button>
+  <view class="auth">
+    <view>
+      <radio value="r1" color="#66e9b5" checked="{{felse}}"/>
+    </view>
+    <text><text class="sq">授权申明：</text> 领取后您将允许学校通过微信刷脸服务扣去该账户资金，并确认将此账户作为校园内微信扣费和账户</text>
+  </view>
+</view>

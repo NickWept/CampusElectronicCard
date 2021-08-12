@@ -1,0 +1,46 @@
+<view class="schoolcard">
+  <view class="title">恭喜您成功激活电子校园卡~</view>
+  <view class="cardinfo">
+    <image mode="widthFix" src="/static/img/card.png"></image>
+    <view class="title">
+      <text class="schoolname">唐河谢岗实验学校</text>
+      <text class="tag">电子校园卡</text>
+    </view>
+    <view class="info">
+      <text class="name">姓名：陈功</text>
+      <text class="grade">班级：初一2020级5班</text>
+    </view>
+  </view>
+</view>
+<view class="bankcard">
+  <view class="content">已为您的电子校园卡开通平安银行电子账户，作为在校消费的扣款来源。</view>
+  <view class="cardinfo">
+    <image mode="widthFix" src="/static/img/card2.png"></image>
+    <view class="box">
+      <view class="cardtype">
+        <text class="icon-tianchongxing- icon"></text>平安银行   储蓄卡
+      </view>
+      <view class="bankinfo">
+        <view class="name">开户银行:</view>
+        <view class="content">平安银行电子账户(III类卡)</view>
+      </view>
+      <view class="bankinfo">
+        <view class="name">开户行:</view>
+        <view class="content">深圳分行营业部</view>
+      </view>
+      <view class="bankinfo">
+        <view class="name">开户人:</view>
+        <view class="content">平安银行电子账户</view>
+      </view>
+      <view class="bankinfo">
+        <view class="name">账户号:</view>
+        <view class="content">平安银行电子账</view>
+      </view>
+    </view>
+  </view>
+  <view class="tips">电子账户的绑定充值银行卡：尾号</view>
+</view>
+
+<view class="btn">
+  <button>完成领取</button>
+</view>

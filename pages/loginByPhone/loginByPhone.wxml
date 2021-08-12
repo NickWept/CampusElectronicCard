@@ -1,0 +1,27 @@
+<form class="formbox" action="">
+  <view class="inpbox">
+    <view class="title">
+      <text class="icon-phone"></text>手机号
+    </view>
+    <view class="item">
+      <input class="form-input" type="number" name="phone" placeholder="请输入手机号" placeholder-class="placeholder-css" />
+    </view>
+  </view>
+  <view class="inpbox">
+    <view class="title">
+      <text class="icon-anquan1"></text>验证码
+    </view>
+    <view class="item">
+      <input class="form-input" type="number" name="code" placeholder="请输入验证码" placeholder-class="placeholder-css" />
+      <text class="getCode">获取验证码</text>
+    </view>
+  </view>
+  <view class="btnbox">
+    <button class="phone">登录</button>
+    <text class="text">登录表示你已同意<text class="tag">《消费用户协议》</text></text>
+  </view>
+</form>
+
+<view class="footer">
+  <text class="text">如有其他疑问,请联系客服：<text class="tag">4009656210</text></text>
+</view>

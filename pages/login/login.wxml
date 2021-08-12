@@ -1,0 +1,14 @@
+<view class="img">
+  <image mode="widthFix" src="/static/img/back.png"></image>
+</view>
+<view class="loginBtns">
+  <button class="wc">
+    <image mode="widthFix" src="/static/img/weixin.png"></image>
+    微信快捷登录
+  </button>
+  <button class="phone">手机验证码登录</button>
+  <text>登录表示你已同意<text class="tag">《消费用户协议》</text></text>
+</view>
+<view class="footer">
+  <text>如有其他疑问,请联系客服：<text class="tag">4009656210</text></text>
+</view>

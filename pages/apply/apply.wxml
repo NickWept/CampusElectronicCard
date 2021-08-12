@@ -1,0 +1,8 @@
+<view class="container">
+  <image mode="widthFix" src="/static/img/back2.png"></image>
+  <view class="title">
+    <text class="title1">有梦想 有故事 有未来</text>
+    <text class="title2">开启校园专属卡片，记录支付生活</text>
+  </view>
+  <button>马上申请</button>
+</view>

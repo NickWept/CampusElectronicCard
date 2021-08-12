@@ -1,0 +1,294 @@
+/* 头部步骤卡片 */
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding-bottom: 25rpx;
+}
+
+.header > .stepbox{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.stepbox > .item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.item > .num{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: rgba(93, 93, 93, 0.5);
+  color: white;
+  font-size: 40rpx;
+  position: relative;
+}
+.item > .num::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  background-color: rgba(122, 122, 122, 0.2);
+  z-index: -1;
+}
+.item > .num.active{
+  background-color: rgba(0, 178, 106, 0.8) !important;
+}
+.item > .num.active::before{
+  background-color: rgba(0, 178, 106,0.2) !important;
+}
+
+.item > text{
+  margin: 40rpx;
+  font-size: 30rpx;
+}
+
+.content {
+  line-height: 45rpx;
+  width: 90vw;
+  font-size: 24rpx;
+  font-weight: bolder;
+}
+.content > text{
+  color: red;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  border-radius: 15rpx 50rpx;
+  margin-top: 10rpx;
+  position: relative;
+  overflow: hidden;
+}
+.card image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.card > view {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+.card > .title {
+  margin-top: 40rpx;
+}
+.card > .info {
+  margin: 30rpx 0;
+}
+.card > view > text{
+  color: white;
+}
+.title .schoolname{
+  font-size: 35rpx;
+  font-weight: bolder;
+}
+.title .tag{
+  font-size: 27rpx;
+  line-height: 50rpx;
+  position: relative;
+}
+.title .tag::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 160rpx;
+  height: 50rpx;
+  border-radius: 40rpx;
+  background-color: rgba(128, 128, 128,0.5);
+  z-index: -1;
+}
+
+.info text{
+  font-size: 27rpx;
+}
+
+/* 表单输入框部分 */
+form{
+  width: 100vw;
+}
+form .part1,
+form .part2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form .box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 10rpx 0;
+  border-bottom: #ececec solid 1rpx;
+}
+form .box > view {
+  display: flex;
+  align-items: center;
+  font-size: 34rpx;
+  height: 80rpx;
+  width: 27vw;
+}
+form .box > input {
+  width: 50vw;
+  padding-right: 2vw;
+  text-align: right;
+}
+.placeholder-css{
+  line-height: 80rpx;
+  font-size: 27rpx;
+}
+
+/* 表单细节调整 */
+.icon-wenhao {
+  padding: 10rpx;
+  font-size: 32rpx;
+  color: #fc9805;
+}
+.icon-xiangji_huaban{
+  padding-right: 3vw;
+  font-size: 40rpx;
+}
+
+.codeinp{
+  width: 30vw !important;
+}
+.getCode{
+  padding-right: 3vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-weight: bolder;
+  color: #17b07c;
+  font-size: 34rpx;
+}
+
+.nobottom{
+  border-bottom: 0 !important;
+}
+.borderbuttom {
+  width: 100vw;
+  border-bottom: #ececec solid 15rpx;
+}
+
+/* 已阅读按钮部分 */
+.auth{
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+.auth > text{
+  font-size: 25rpx;
+}
+.auth .sq{
+  color: #4393ee;
+}
+
+/* 按钮和底部文本调整 */
+button {
+  width: 80vw !important; 
+  height: 80rpx !important;
+  padding: 0 !important;
+  line-height: 80rpx !important;
+  font-weight: 0 !important;
+  border-radius: 15rpx !important; 
+  letter-spacing: 5rpx;
+  margin: 50rpx 0 0 !important;
+  background: #03ba77;
+  color: white;
+}
+.help {
+  margin: 30rpx;
+  color: #3857ac;
+  font-size: 28rpx;
+  text-decoration: underline;
+}
+.footertext {
+  color: #ed9a00;
+  font-size: 24rpx;
+}
+
+/* 选择菜单 */
+.sheet{
+  height: 50vh;
+  width: 100vw;
+  background-color: white;
+  border-radius: 20rpx 20rpx 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blod, .cancel {
+  width: 100vw;
+  text-align: center;
+  height: 6vh;
+  line-height: 6vh;
+  font-weight: bolder;
+}
+.blod {
+  border-bottom: 1rpx solid #f3f3f3;
+}
+.cancel {
+  border-top: 20rpx solid #f3f3f3;
+}
+
+.banks{
+  height: 35vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+.banks .bankname{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border: rgba(128, 128, 128, 0.2) solid 0.5rpx;
+}
+.banks .bankname > text {
+  color: #fa8f28;
+}
+
+/* 提示框样式 */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content .tips{
+  height: 8vh;
+  line-height: 8vh;
+  font-weight: bolder;
+  font-size: 40rpx;
+}
+
+.modal-content .tipstext {
+  padding: 10rpx 70rpx 0;
+  color: #868686;
+  font-size: 34rpx;
+  text-align: center;
+}

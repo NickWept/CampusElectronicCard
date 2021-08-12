@@ -1,0 +1,93 @@
+<view class="header">
+  <view class="stepbox">
+    <view class="item">
+      <view class="num active">1</view>
+      <text>验证用户身份</text>
+    </view>
+    <view class="item">
+      <view class="num">2</view>
+      <text>激活完成</text>
+    </view>
+  </view>
+  <view class="content">请为您的电子校园卡开通电子账户，作为在校消费微信扣款来源请使用<text>当前微信实名认证本人</text>的银行卡进行以下操作
+  </view>
+  <view class="card">
+    <image mode="center" src="/static/img/indexBackgroundImg.png"></image>
+    <view class="title">
+      <text class="schoolname">唐河谢岗实验学校</text>
+      <text class="tag">电子校园卡</text>
+    </view>
+    <view class="info">
+      <text class="name">姓名：陈功</text>
+      <text class="grade">班级：初一2020级5班</text>
+    </view>
+  </view>
+</view>
+<form action="">
+  <view class="part1">
+    <view class="box">
+      <view>银行名称</view>
+      <input type="text" bindtap="openActionsheet"  placeholder-class="placeholder-css" placeholder="请选择银行"/>
+    </view>
+    <view class="box nobottom">
+      <view>银行卡号<text class="icon-wenhao"></text></view>
+      <input type="number" placeholder-class="placeholder-css" placeholder="请输入储蓄卡号"/>    
+      <text class="icon-xiangji_huaban"></text>
+    </view>
+  </view>
+  
+  <view class="borderbuttom"></view>
+  
+  <view class="part2">
+    <view class="box">
+    <view>持卡人姓名</view>
+    <input type="text" placeholder-class="placeholder-css" placeholder="请填写微信本人姓名"/>
+    </view>
+    <view class="box">
+      <view>身份证号</view>
+      <input type="idcard" placeholder-class="placeholder-css" placeholder="请填写微信本人身份证号"/>    
+    </view>
+    <view class="box">
+      <view>手机号</view>
+      <input type="text" placeholder-class="placeholder-css" placeholder="请填写银行预留手机号"/>    
+    </view>
+    <view class="box">
+      <view>验证码</view>
+      <input class="codeinp" type="number" placeholder-class="placeholder-css" placeholder="请填写验证码"/>    
+      <text class="getCode">获取验证码</text>
+    </view>
+    <view class="auth">
+      <view>
+        <radio value="r1" color="#66e9b5" checked="{{felse}}"/>
+      </view>
+      <text>我已阅读<text class="sq">《电子II、III类用户服务协议》、《个人银行结算账户跨行收费服务协议》、《人脸快捷支付业务服务协议》</text>并同意相关内容</text>
+    </view>
+    <button bindtap="showModal">验证用户身份</button>
+    <text class="help">开通遇到困难？</text>
+    <text class="footertext">注：校智付平台仅为您提供平台服务，不参与您与银行之间其他业务</text>
+  </view>
+</form>
+<!-- showActionsheet -->
+<my-actionSheet bindactiontap="closeActionSheet" show="{{showActionsheet}}">
+  <view class="sheet">
+    <view class="blod">选择银行</view>
+    <view class="banks">
+      <view class="bankname">中国银行<text class="icon-tuijian"></text></view>
+      <view class="bankname">农业银行<text class="icon-tuijian"></text></view>
+      <view class="bankname">工商银行<text class="icon-tuijian"></text></view>
+      <view class="bankname">建设银行<text class="icon-tuijian"></text></view>
+      <view class="bankname">浦发银行</view>
+      <view class="bankname">光大银行</view>
+      <view class="bankname">中央银行</view>
+    </view>
+    <view class="cancel">取消</view>
+  </view>
+
+</my-actionSheet>
+
+<my-showModel show="{{showModal}}" cancelText="取消" confirmText="暂不开通，下一步" height='30vh' bindcancel="modalCancel" bindconfirm='modalConfirm'>
+   <view class='modal-content'>
+    <view class="tips">提示</view>
+    <view class="tipstext">因银行规定，暂只支持大陆居民进行开通；如遇到其他困难，根据提示进行操作即可。</view>
+   </view>
+</my-showModel>

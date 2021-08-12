@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'iconfont';  /* Project id 2722235 */
+  src: url('//at.alicdn.com/t/font_2722235_6z6ali6ttj2.woff2?t=1628513123020') format('woff2'),
+       url('//at.alicdn.com/t/font_2722235_6z6ali6ttj2.woff?t=1628513123020') format('woff'),
+       url('//at.alicdn.com/t/font_2722235_6z6ali6ttj2.ttf?t=1628513123020') format('truetype');
+}
+
+[class^='icon-'] {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-weixinzhifu:before {
+  content: "\e639";
+}
+
+.icon-shandian:before {
+  content: "\e87a";
+}
+
+.icon-wenhao:before {
+  content: "\e6d7";
+}
+
+.icon-shezhi:before {
+  content: "\e660";
+}
+
+.icon-bianji:before {
+  content: "\e641";
+}
+
+.icon-kefu:before {
+  content: "\e643";
+}
+
+.icon-fl-renminbi:before {
+  content: "\e634";
+}
+
+.icon-jinzhi:before {
+  content: "\e63a";
+}
+
+.icon-xiangyou1:before {
+  content: "\e64a";
+}
+
+.icon-tianchongxing-:before {
+  content: "\e62c";
+}
+
+.icon-gantanhao:before {
+  content: "\e710";
+}
+
+.icon-shijian:before {
+  content: "\e714";
+}
+
+.icon-xiangji_huaban:before {
+  content: "\e633";
+}
+
+.icon-tuijian:before {
+  content: "\e6cd";
+}
+
+.icon-renlianshibie:before {
+  content: "\e615";
+}
+
+.icon-gou:before {
+  content: "\e686";
+}
+
+.icon-anquan1:before {
+  content: "\e865";
+}
+
+.icon-phone:before {
+  content: "\e630";
+}
+
+.icon-weixin:before {
+  content: "\e66d";
+}
+
+.icon-qianbao:before {
+  content: "\e697";
+}
+
+.icon-jinbi-yingbi-huobi-Coin:before {
+  content: "\e618";
+}
+
+.icon-fuwuzhangdanmoban:before {
+  content: "\e651";
+}
+
+.icon-anquan:before {
+  content: "\ec68";
+}
+
+.icon-xiangyou:before {
+  content: "\e62f";
+}
+
+.icon-wode:before {
+  content: "\e66c";
+}
+
+.icon-wodedangxuan:before {
+  content: "\e608";
+}
+
+.icon-shouye-xuanzhong:before {
+  content: "\e62d";
+}
+
+.icon-shouye-weixuanzhong:before {
+  content: "\e62e";
+}
+
+.icon-checkbox-full:before {
+  content: "\ea6f";
+}
+
+
+

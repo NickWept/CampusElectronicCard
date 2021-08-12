@@ -1,0 +1,81 @@
+.formbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+}
+
+.inpbox{
+  height: 140rpx;
+  width: 550rpx;
+  border-bottom: 5rpx solid #fbfbfb;
+  margin: 75rpx;
+}
+
+/* input容器 */
+.item{
+  display: flex;
+  justify-content: space-between;
+}
+.item > .form-input{
+  height: 100rpx;
+  border-radius:25rpx;
+}
+
+.placeholder-css{
+  color: #828282;
+}
+
+
+.title > text{
+   color: #54e5ae;
+   font-size: 40rpx;
+   margin-right: 10rpx;
+}
+/* 获取验证码 */
+.getCode{
+  font-size: 25rpx;
+  font-weight: bolder;
+  color: #7a7a7a;
+  line-height: 100rpx;
+}
+
+/* 登录按钮容器 */
+.btnbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone {
+  width: 85% !important; 
+  height: 100rpx !important;
+  padding: 0 !important;
+  line-height: 100rpx !important;
+  font-weight: 0 !important;
+  border-radius: 15rpx !important; 
+  letter-spacing: 5rpx;
+  margin: 20rpx !important;
+  background:linear-gradient(to right,#0cdcab,50%,#a3c7fb);
+  color: white;
+}
+
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30rpx 0;
+}
+.tag {
+  color: #35896d;
+}
+
+.text {
+  color: #727272;
+  font-size: 27rpx;
+  letter-spacing: 5rpx;
+}

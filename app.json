@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myself/myself",
+    "pages/login/login",
+    "pages/loginByPhone/loginByPhone",
+    "pages/apply/apply",
+    "pages/claim/claim",
+    "pages/checkUserInfo/checkUserInfo",
+    "pages/completeClaim/completeClaim"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#272735",
+    "color": "#989898",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/img/index.png",
+        "selectedIconPath": "/static/img/index_active.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "/static/img/myself.png",
+        "selectedIconPath": "/static/img/myself_active.png"
+      }
+    ]
+  }
+}
