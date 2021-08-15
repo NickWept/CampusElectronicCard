@@ -4,7 +4,11 @@
     <view class="content">
       <view class="title">
         <view class="schoolname">唐河谢岗实验学校</view>
-        <button>去签约</button>
+        <button wx:if="{{!facePayFlag}}" class="qy">去签约</button>
+        <view wx:else class="facepay">
+          <text class="icon-renlianshibie" style="font-size: 35rpx;"></text>
+          <text>刷脸</text>
+        </view>
       </view>
       <view class="detial">建议开通微信刷脸代扣，无需充值安全更便携</view>
     </view>
@@ -60,5 +64,12 @@
     <view class="iconimg">
       <image mode="aspectFit" src="/static/img/security.png"></image>
     </view>
+  </view>
+</view>
+<view class="tipswindows" wx:if="{{tipsWindowsFlag}}">
+  <view class="box">
+    <view class="tipstitle">温馨提示</view>
+    <view class="content">为了您实时查收在校消费情况，我们件给您推送消息通知!</view>
+    <button class="tipsbtn" bindtap="hipeWindows">知道了</button>
   </view>
 </view>
