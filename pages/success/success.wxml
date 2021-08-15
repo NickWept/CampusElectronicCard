@@ -1,0 +1,7 @@
+<view class="container">
+  <icon class="icon-box-img" type="success" size="93"></icon>
+  <text>免密支付已开通</text>
+</view>
+<view class="footer">
+    <button>返回</button>
+</view>

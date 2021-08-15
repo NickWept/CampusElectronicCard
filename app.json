@@ -7,7 +7,10 @@
     "pages/apply/apply",
     "pages/claim/claim",
     "pages/checkUserInfo/checkUserInfo",
-    "pages/completeClaim/completeClaim"
+    "pages/completeClaim/completeClaim",
+    "pages/sign/sign",
+    "pages/freePayment/freePayment",
+    "pages/success/success"
   ],
   "window": {
     "backgroundTextStyle": "light",

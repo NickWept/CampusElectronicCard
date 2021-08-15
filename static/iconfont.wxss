@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'iconfont';  /* Project id 2722235 */
-  src: url('//at.alicdn.com/t/font_2722235_6z6ali6ttj2.woff2?t=1628513123020') format('woff2'),
-       url('//at.alicdn.com/t/font_2722235_6z6ali6ttj2.woff?t=1628513123020') format('woff'),
-       url('//at.alicdn.com/t/font_2722235_6z6ali6ttj2.ttf?t=1628513123020') format('truetype');
+  src: url('//at.alicdn.com/t/font_2722235_iwm2y54417q.woff2?t=1629011344811') format('woff2'),
+       url('//at.alicdn.com/t/font_2722235_iwm2y54417q.woff?t=1629011344811') format('woff'),
+       url('//at.alicdn.com/t/font_2722235_iwm2y54417q.ttf?t=1629011344811') format('truetype');
 }
 
 [class^='icon-'] {
@@ -11,6 +11,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shuyi_xuesheng:before {
+  content: "\e668";
 }
 
 .icon-weixinzhifu:before {
@@ -89,22 +93,6 @@
   content: "\e66d";
 }
 
-.icon-qianbao:before {
-  content: "\e697";
-}
-
-.icon-jinbi-yingbi-huobi-Coin:before {
-  content: "\e618";
-}
-
-.icon-fuwuzhangdanmoban:before {
-  content: "\e651";
-}
-
-.icon-anquan:before {
-  content: "\ec68";
-}
-
 .icon-xiangyou:before {
   content: "\e62f";
 }
@@ -128,6 +116,7 @@
 .icon-checkbox-full:before {
   content: "\ea6f";
 }
+
 
 
 

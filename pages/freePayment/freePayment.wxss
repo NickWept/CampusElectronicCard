@@ -1,0 +1,111 @@
+page{
+  background-color: #f8f8f8;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vh;
+  background-color: white;
+}
+
+.header .img {
+  height: 150rpx;
+  width: 150rpx;
+}
+.header .img > image {
+  height: 150rpx;
+  width: 150rpx;
+}
+
+.header > .title {
+  margin-top: 46rpx;
+  font-weight: bolder;
+}
+
+.header > .schoolname{
+  font-size: 32rpx;
+  margin: 20rpx 0;
+}
+
+/* 中间信息 */
+.container {
+  padding-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  background-color: white;
+}
+
+.item {
+  display: flex;
+  margin: 30rpx 0; 
+  padding-right: 30rpx;
+}
+
+.part2 > .item {
+  height: 100rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.part2 > .item > text{
+  margin-right: 40rpx;
+  color: #8f8f8f;
+  font-weight: bolder;
+}
+
+.item > .left {
+  display: flex;
+  margin: 20rpx 0;
+  align-items: center;
+}
+
+.left > .content {
+    display: flex;  
+    align-items: center;
+}
+
+.item .tag {
+  display: block;
+  padding-left: 40rpx;
+  padding-right: 20rpx;
+  white-space: nowrap;
+  color: #8f8f8f;
+}
+
+.coin {
+  height: 50rpx;
+  width: 50rpx;
+  margin-right: 10rpx;
+}
+
+.line {
+  border-top: 2rpx solid rgba(0, 0, 0, 0.2);
+}
+
+/* 底部按钮 */
+.footer {
+  position: absolute;
+  bottom: 7vh;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+}
+
+button {
+  width: 50vw !important; 
+  height: 80rpx !important;
+  padding: 0 !important;
+  line-height: 80rpx !important;
+  font-weight: bold !important;
+  border-radius: 10rpx !important; 
+  letter-spacing: 5rpx;
+  margin-top: 0rpx !important;
+  background: #07c062;
+  color: white;
+}

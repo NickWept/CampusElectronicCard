@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.container > text {
+  margin-top: 3vh;
+}
+
+.footer {
+  position: absolute;
+  bottom: 15vh;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+}
+
+button {
+  width: 50vw !important; 
+  height: 80rpx !important;
+  padding: 0 !important;
+  line-height: 80rpx !important;
+  font-weight: bold !important;
+  border-radius: 10rpx !important; 
+  letter-spacing: 5rpx;
+  margin-top: 0rpx !important;
+  background: #07c062;
+  color: white;
+}

@@ -1,0 +1,41 @@
+<view class="header">
+  <view class="img">
+    <image mode="widthFix" src="/static/img/student.png" alt=""/>
+  </view>
+  <view class="title">校园刷脸服务免密协议</view>
+  <view class="schoolname">唐河谢岗实验学校</view>
+</view>
+<view class="container">
+  <view class="part1">
+    <view class="item">
+      <view class="tag">用户账号</view>
+      <view class="content">13480161684</view>
+    </view>
+    <view class="item">
+      <view class="tag">服务内容</view>
+      <view class="content">在学校内，为教职工、学生提供便捷的刷脸服务。</view>
+    </view>
+  </view>
+  <view class="part2">
+    <view class="item">
+      <view class="left">
+        <view class="tag">使用范围</view>
+        <view class="content">唐河谢岗实验学校</view>
+      </view>
+      <text class="icon-xiangyou1 icon"></text>
+    </view>
+    <view class="item line">
+      <view class="left">
+        <view class="tag">扣钱方式</view>
+        <view class="content">
+          <image class="coin" mode="widthFix" src="/static/img/Coin.png"></image>
+          零钱
+        </view>
+      </view>
+      <text class="icon-xiangyou1 icon"></text>
+    </view>
+  </view>
+</view>
+<view class="footer">
+    <button>开通免密支付</button>
+</view>

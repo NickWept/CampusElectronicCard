@@ -53,6 +53,24 @@
           "pathName": "pages/completeClaim/completeClaim",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "sign(签约)",
+          "pathName": "pages/sign/sign",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "freePayment(开通免密支付)",
+          "pathName": "pages/freePayment/freePayment",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "success(开通成功)",
+          "pathName": "pages/success/success",
+          "query": "",
+          "scene": null
         }
       ]
     }
