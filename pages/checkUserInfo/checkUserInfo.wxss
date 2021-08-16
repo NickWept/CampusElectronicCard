@@ -284,6 +284,7 @@ button {
   line-height: 8vh;
   font-weight: bolder;
   font-size: 40rpx;
+  color: #c3c3c3;
 }
 
 .modal-content .tipstext {

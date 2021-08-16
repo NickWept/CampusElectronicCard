@@ -88,6 +88,6 @@
 <my-showModel show="{{showModal}}" cancelText="取消" confirmText="暂不开通，下一步" height='30vh' bindcancel="modalCancel" bindconfirm='modalConfirm'>
    <view class='modal-content'>
     <view class="tips">提示</view>
-    <view class="tipstext">因银行规定，暂只支持大陆居民进行开通；如遇到其他困难，根据提示进行操作即可。</view>
+    <view class="tipstext">开通电子账户可保证资金安全，校内消费专款专用，账目清晰。</view>
    </view>
 </my-showModel>
