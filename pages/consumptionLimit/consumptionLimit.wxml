@@ -1,0 +1,36 @@
+<view class="warn">
+  <text class="icon-gantanhao icon"></text>限额说明：<text class="bloder">限额仅在学校消费机联网状态下生效</text>，设置消费限额可以帮助孩子建立良好的消费习惯
+</view>
+<view class="container">
+  <view class="title">
+    <text>消费限额</text>
+    <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+  </view>
+  <view class="limit">
+    <text><text class="status">*</text>日限额</text>
+    <text>50.00 元/天</text>
+  </view>
+  <view class="tips">(以下各个消费场所均不能超过50.00元/天)</view>
+  <view class="box">
+    <view class="item">
+      <text>食堂</text>
+      <view class="inp">
+        <text class="icon-fl-renminbi"></text>
+        <input type="number" value="50.00"/>
+        <text>元/天</text>
+      </view>
+    </view>
+    <view class="item">
+      <text>超市</text>
+      <view class="inp">
+        <text class="icon-fl-renminbi"></text>
+        <input type="number" value="50.00"/>
+        <text>元/天</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="footer">
+    <button>保存</button>
+</view>

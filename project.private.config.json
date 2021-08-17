@@ -71,6 +71,24 @@
           "pathName": "pages/success/success",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "consumptionLimit(消费限额)",
+          "pathName": "pages/consumptionLimit/consumptionLimit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "cardBag(电子卡包)",
+          "pathName": "pages/cardBag/cardBag",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "seting(设置)",
+          "pathName": "pages/seting/seting",
+          "query": "",
+          "scene": null
         }
       ]
     }

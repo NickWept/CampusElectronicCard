@@ -10,7 +10,10 @@
     "pages/completeClaim/completeClaim",
     "pages/sign/sign",
     "pages/freePayment/freePayment",
-    "pages/success/success"
+    "pages/success/success",
+    "pages/consumptionLimit/consumptionLimit",
+    "pages/cardBag/cardBag",
+    "pages/seting/seting"
   ],
   "window": {
     "backgroundTextStyle": "light",

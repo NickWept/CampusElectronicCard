@@ -1,0 +1,23 @@
+<view class="infobox">
+  <view class="title">账户安全</view>
+  <view class="phone">
+    <text>手机号</text>
+    <text>13480161684</text>
+  </view>
+  <view class="wc">
+    <text>微信</text>
+    <text>charles</text>
+  </view>
+</view>
+<view class="infobox">
+  <view class="title">通知提醒</view>
+  <view class="box">
+    <text>接收消息通知提醒</text>
+    <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+  </view>
+  <text class="text">你将及时接收消息信息、钱包及账户信息变动情况提醒</text>
+</view>
+<view class="footer">
+  <button>切换用户</button>
+  <button class="query">推出登录</button>
+</view>

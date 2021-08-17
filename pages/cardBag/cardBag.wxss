@@ -1,0 +1,40 @@
+page {
+  background-color: #faf5fb;
+}
+.carditem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 30rpx;
+  padding: 30rpx;
+}
+
+.carditem > .text {
+  font-size: 28rpx;
+  width: 90vw;
+  color: #878787;
+}
+
+.carditem > .rowbox {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.right {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.go {
+  color: #f99453;
+  margin-right: 10rpx;
+}
+
+.bagicon {
+  color: #1ec38b;
+  margin-right: 20rpx;
+}

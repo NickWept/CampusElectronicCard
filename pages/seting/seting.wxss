@@ -1,0 +1,63 @@
+.infobox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 50rpx;
+}
+
+.infobox > .title {
+  font-size: 50rpx;
+  font-weight: bolder;
+  width: 90vw;
+}
+
+.phone, .wc {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin-top: 45rpx;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  width: 90VW;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 40rpx;
+}
+
+.infobox > .text {
+  font-size: 28rpx;
+  color: #b2b2b2;
+  width: 90vw;
+  margin-top: 30rpx;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  margin-bottom: 5vh;
+}
+
+button {
+  width: 90vw !important; 
+  height: 80rpx !important;
+  padding: 0 !important;
+  line-height: 80rpx !important;
+  font-weight: bold !important;
+  border-radius: 10rpx !important; 
+  letter-spacing: 5rpx;
+  margin-top: 25rpx !important;
+  background: #07c062;
+  color: white;
+}
+
+.query {
+  background-color: #ececea;
+  color: #07c062;
+}

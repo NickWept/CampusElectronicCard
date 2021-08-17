@@ -1,0 +1,38 @@
+<view class="carditem">
+  <text class="text">建议开通微信刷脸代扣，无需充值安全更便捷</text>
+  <view class="rowbox">
+    <view class="left">
+      <text class="icon-tianchongxing- bagicon"></text>
+      <text>微信刷脸免密代扣</text>
+    </view>
+    <view class="right">
+      <text class="go">去开通</text>
+      <text class="icon-xiangyou1"></text>
+    </view>
+  </view>
+</view>
+<view class="carditem">
+  <view class="rowbox">
+    <view class="left">
+      <text class="icon-tianchongxing- bagicon"></text>
+      <text>原账户余额</text>
+    </view>
+    <view class="right">
+      <text class="icon-fl-renminbi"></text>
+      <text>0.00</text>
+    </view>
+  </view>
+</view>
+<view class="carditem">
+  <text class="text">补助金为学校发放，仅部分用户拥有</text>
+  <view class="rowbox">
+    <view class="left">
+      <text class="icon-tianchongxing- bagicon"></text>
+      <text>补助金</text>
+    </view>
+    <view class="right">
+      <text class="icon-fl-renminbi"></text>
+      <text>0.00</text>
+    </view>
+  </view>
+</view>
