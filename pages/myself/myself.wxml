@@ -1,2 +1,66 @@
-<!--pages/myself/myself.wxml-->
-<text>pages/myself/myself.wxml</text>
+<view class="infobox">
+  <view class="info">
+    <view class="username">
+      陈功
+      <text class="icon-bianji icon"></text>
+    </view>
+    <view class="school">
+      <text class="name">唐河谢岗实验学校</text>
+      <text class="grader">（初一2020级5班）</text>
+    </view>
+  </view>
+  <view class="imgbox">
+    <image mode="widthFix" src="/static/img/studentImg.png"></image>
+  </view>
+</view>
+<view class="container">
+  <view class="item">
+    <view class="title">
+      <text class="icon-tianchongxing- icon"></text>
+      <text>电子校园卡卡包</text>
+    </view>
+    <text class="icon-xiangyou1"></text>
+  </view>
+  <view class="item">
+    <view class="title">
+      <text class="icon-shijian icon"></text>
+      <text>待支付金额</text>
+    </view>
+    <view class="money">
+      <text class="icon-fl-renminbi">0.00</text>
+      <text class="icon-xiangyou1"></text>
+    </view>
+  </view>
+  <view class="item">
+    <view class="title">
+      <text class="icon-renlianshibie icon"></text>
+      <text>人脸支付</text>
+    </view>
+    <text class="tag">已开通</text>
+  </view>
+  <view class="tips">开通人脸支付后无需充值校园卡，消费更便捷安全哦~</view>
+  <view class="item">
+    <view class="title">
+      <text class="icon-jinzhi icon"></text>
+      <text>消费限额</text>
+    </view>
+    <view class="money">
+      <text class="icon-fl-renminbi">50.00</text>
+      <text class="icon-xiangyou1"></text>
+    </view>
+  </view>
+  <view class="item">
+    <view class="title">
+      <text class="icon-shezhi icon"></text>
+      <text>设置</text>
+    </view>
+    <text class="icon-xiangyou1"></text>
+  </view>
+  <view class="item">
+    <view class="title">
+      <text class="icon-kefu icon"></text>
+      <text>反馈与建议</text>
+    </view>
+    <text class="phonenumber">400-9656210</text>
+  </view>
+</view>

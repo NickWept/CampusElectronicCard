@@ -89,6 +89,12 @@
           "pathName": "pages/seting/seting",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "myself(个人中心)",
+          "pathName": "pages/myself/myself",
+          "query": "",
+          "scene": null
         }
       ]
     }

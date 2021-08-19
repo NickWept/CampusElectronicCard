@@ -1,1 +1,104 @@
-/* pages/myself/myself.wxss */
+/* 信息卡样式 */
+.infobox {
+  display: flex;
+  height: 200rpx;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.infobox > .info {
+  font-size: 30rpx;
+  color: #b0afb4;
+}
+
+.info > .username {
+  font-size: 38rpx;
+  color: black;
+  font-weight: bolder;
+}
+
+.username > .icon {
+  font-weight: 0;
+  color: #b0afb4;
+  font-size: 30rpx;
+  margin-left: 5rpx;
+}
+
+.infobox > .imgbox {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+}
+
+.imgbox > image {
+  height: 120rpx;
+  width: 120rpx;
+}
+
+/* 菜单样式 */
+.container {
+  width: 100vw;
+  border-top: 20rpx solid #f6f6f6;
+  padding-top: 30rpx;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120rpx;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.item > .title {
+  display: flex;
+  align-items: center;
+}
+
+.item > .title > .icon {
+  color: #1dc38b;
+  margin-right: 20rpx;
+  font-size: 40rpx;
+}
+
+.item > .money {
+  display: flex;
+  color: #908e9a;
+}
+
+.icon-xiangyou1 {
+  margin-left: 20rpx;
+  color: #908e9a;
+  font-size: 34rpx;
+}
+
+/* 细节 */
+.tag {
+  background-color: #07ba78;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 120rpx;
+  color: white;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+.tips {
+  width: 95vw;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 0 auto;
+  background-color: #f6f5fa;
+  border-radius: 50rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: #918e95;
+}
+
+.phonenumber {
+  color: #0b00a5;
+}
