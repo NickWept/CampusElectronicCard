@@ -95,6 +95,12 @@
           "pathName": "pages/myself/myself",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "uni-calendar",
+          "pathName": "pages/uni-calendar/uni-calendar",
+          "query": "",
+          "scene": null
         }
       ]
     }

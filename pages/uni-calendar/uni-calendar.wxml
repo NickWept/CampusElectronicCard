@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="yearsbox">
+    <text class="icon-xiangzuo" bindtap="lastMonthAndLastWeek"></text>
+    <view class="years">{{year}}年{{month}}月</view>
+    <text class="icon-xiangyou1" bindtap="nextMonthAndNextWeek"></text>
+  </view>
+
+  <view class="weeklist" bindtap="openchange">
+    <text>一</text>
+    <text>二</text>
+    <text>三</text>
+    <text>四</text>
+    <text>五</text>
+    <text>六</text>
+    <text>日</text>
+  </view>
+
+  <view class="daylist">
+    <block wx:for="{{daylist}}" wx:key="item">
+      <text class="item" bindtap="changeSelectDay" data-datenum="{{item}}">{{item}}</text>
+    </block>
+  </view>
+
+</view>

@@ -13,7 +13,8 @@
     "pages/success/success",
     "pages/consumptionLimit/consumptionLimit",
     "pages/cardBag/cardBag",
-    "pages/seting/seting"
+    "pages/seting/seting",
+    "pages/uni-calendar/uni-calendar"
   ],
   "window": {
     "backgroundTextStyle": "light",
