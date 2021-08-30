@@ -27,7 +27,7 @@
   <view class="part1">
     <view class="box">
       <view>银行名称</view>
-      <input type="text" bindtap="openActionsheet"  placeholder-class="placeholder-css" placeholder="请选择银行"/>
+      <input type="text" value="{{formInfo.bank}}" bindtap="openActionsheet"  placeholder-class="placeholder-css" placeholder="请选择银行"/>
     </view>
     <view class="box nobottom">
       <view>银行卡号<text class="icon-wenhao"></text></view>
@@ -71,14 +71,14 @@
 <my-actionSheet bindactiontap="closeActionSheet" show="{{showActionsheet}}">
   <view class="sheet">
     <view class="blod">选择银行</view>
-    <view class="banks">
-      <view class="bankname">中国银行<text class="icon-tuijian"></text></view>
-      <view class="bankname">农业银行<text class="icon-tuijian"></text></view>
-      <view class="bankname">工商银行<text class="icon-tuijian"></text></view>
-      <view class="bankname">建设银行<text class="icon-tuijian"></text></view>
-      <view class="bankname">浦发银行</view>
-      <view class="bankname">光大银行</view>
-      <view class="bankname">中央银行</view>
+    <view class="banks" bindtap="bankSelect">
+      <view class="bankname" data-name="中国银行">中国银行<text data-name="中国银行" class="icon-tuijian"></text></view>
+      <view class="bankname" data-name="农业银行">农业银行<text data-name="农业银行" class="icon-tuijian"></text></view>
+      <view class="bankname" data-name="工商银行">工商银行<text data-name="工商银行" class="icon-tuijian"></text></view>
+      <view class="bankname" data-name="建设银行">建设银行<text data-name="建设银行" class="icon-tuijian"></text></view>
+      <view class="bankname" data-name="浦发银行">浦发银行</view>
+      <view class="bankname" data-name="光大银行">光大银行</view>
+      <view class="bankname" data-name="中央银行">中央银行</view>
     </view>
     <view class="cancel">取消</view>
   </view>

@@ -1,5 +1,5 @@
 <view class="container">
-  <view class="header">
+  <view class="header {{isActive ? 'active' : ''}}">
     <view class="step">
       <text class="num">1</text>
       <text>开通刷脸支付</text>
@@ -17,7 +17,7 @@
     <view class="item"><text class="icon-anquan1 icon"></text>资金更安全，无补卡、盗刷卡风险</view>
   </view>
   <view class="footer">
-    <button>马上开通</button>
+    <button bindtap="openNow">马上开通</button>
     <text>暂不开通，取消费中心</text>
   </view>
 

@@ -6,16 +6,15 @@ Page({
    */
   data: {
     showActionsheet: false,
-    showModal: false
+    showModal: false,
+    // 表单信息
+    formInfo: {
+      bank:''
+    }
   },
   showModal:function(){
     this.setData({
       showModal:true
-    })
-  },
-  openActionsheet:function(){
-    this.setData({
-      showActionsheet:true
     })
   },
   closeActionSheet: function () {
@@ -23,6 +22,26 @@ Page({
       showActionsheet: false
     })
   },
+  // 银行选择器事件
+  openActionsheet:function(){
+    this.setData({
+      showActionsheet:true
+    })
+  },
+  // 返回银行事件
+  bankSelect:function (e) {
+    // 事件委托
+    console.log(e.target.dataset.name)
+    this.setData({
+      // 赋值
+      formInfo: {
+        bank: e.target.dataset.name
+      } 
+    })
+    // 关闭选择器
+    this.closeActionSheet()
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */

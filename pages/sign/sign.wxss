@@ -51,6 +51,20 @@
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+
+.header.active > .step {
+  color: #00bd73;
+}
+
+.header.active > .step > .num{
+  background-color: #00bd73 !important;
+}
+
+.header.active >.step > .num::before {
+  background-color: rgba(0, 189, 115, 0.2) !important;
+  z-index: -1;
+}
+
 .header > .line {
   position: absolute;
   top: 25%;
@@ -59,6 +73,11 @@
   width: 42vw;
   border-top: 5rpx solid rgba(0, 0, 0, 0.2);
 }
+
+.header.active > .line {
+  border-top: 5rpx solid rgba(0, 189, 115, 0.5) !important;
+}
+
 
 /* 中间 */
 .content {

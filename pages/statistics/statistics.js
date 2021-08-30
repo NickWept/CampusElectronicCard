@@ -1,18 +1,11 @@
-// pages/sign/sign.js
+// pages/statistics/statistics.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isActive: false
-  },
 
-  // 按钮点击事件
-  openNow(){
-    this.setData({
-      isActive: true
-    })
   },
 
   /**

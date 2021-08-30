@@ -97,8 +97,14 @@
           "scene": null
         },
         {
-          "name": "uni-calendar",
-          "pathName": "pages/uni-calendar/uni-calendar",
+          "name": "calendar(别人写的)",
+          "pathName": "pages/calendar/calendar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "statistics(考勤统计)",
+          "pathName": "pages/statistics/statistics",
           "query": "",
           "scene": null
         }

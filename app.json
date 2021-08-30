@@ -14,7 +14,8 @@
     "pages/consumptionLimit/consumptionLimit",
     "pages/cardBag/cardBag",
     "pages/seting/seting",
-    "pages/uni-calendar/uni-calendar"
+    "pages/calendar/calendar",
+    "pages/statistics/statistics"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,80 @@
+/* components/myCalendar/myCalendar.wxss */
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.calendar {
+  background-color: #fff;
+}
+
+.calendar .calendar-week {
+  line-height: 40rpx;
+  padding: 0 25rpx;
+  font-size: 28rpx;
+  color: #1c1c1c;
+}
+
+.calendar .calendar-main {
+  padding: 30rpx 25rpx;
+  transition: height 0.3s;
+  align-content: flex-start;
+  overflow: hidden;
+}
+
+.calendar .calendar-main .day {
+  width: 100rpx;
+  color: #666;
+  text-align: center;
+  height: 72rpx;
+}
+
+.calendar .calendar-main .day .bg {
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 选中样式 */
+.calendar .calendar-main .day .bg.select {
+  width: 56rpx;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(-60deg, #0FDAC5, #1BC7B0);
+  box-shadow: 0px 5px 16px 0px #C6F3ED;
+  margin: 0 auto;
+}
+
+.calendar .calendar-main .day .other-month {
+  color: #ccc;
+}
+
+.calendar .calendar-main .day .spot {
+  width: 8rpx;
+  height: 8rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 6rpx auto 0;
+}
+
+swiper {
+  width: 100%;
+}
+swiper-item {
+  height: 56rpx;
+  display: flex;
+}
