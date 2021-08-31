@@ -10,7 +10,7 @@ Component({
     },
     defaultTime:{
       type: String,
-      value: '2021-8-30'
+      value: ''
     }
   },
 
@@ -23,7 +23,13 @@ Component({
       currWeekList: [],
       nextWeekList:[],
     },
-    selectDay: {},
+    selectDay: {
+      year: '',
+      month: '',
+      day: '',
+      dateString: '',
+    },
+    today: '', // 当天
     currentNum: 1, // 日历位置
   },
 
@@ -59,6 +65,27 @@ Component({
       return getDate(time, format)
     },
 
+    // num 为 0 获取本周list， 为 -7 获取上周list  为7获取下周list
+    getWeekList(num, time, day){
+      let weekList = [];
+      for (let i=0; i<7; i++){
+        const now2 = new Date(time)
+        // 从周一到周日
+        const currDate = now2.getDay() === 0 ? 6 : now2.getDay() - 1
+        now2.setDate(day - currDate + i + num)
+        let obj = {};
+        obj = {
+          day: now2.getDate(),
+          month: now2.getMonth() + 1,
+          year: now2.getFullYear(),
+          dateString: this.formatTime(now2, "Y-M-D"),
+        };
+        weekList[i] = obj;
+      }
+      // console.log(weekList)
+      return weekList
+    },
+
     dateInit( setDay = this.data.selectDay.day, setYear =  this.data.selectDay.year, setMonth = this.data.selectDay.month){
       // 从周一到周日，三组数据，上周 本周 下周
       let preWeekList = [];
@@ -66,35 +93,9 @@ Component({
       let currWeekList = [];
       let now = new Date(setYear, setMonth - 1 , setDay)
 
-      let that = this
-      // num 为 0 获取本周list， 为 -7 获取上周list  为7获取下周list
-      let getWeekList = function (num, time=now, day = setDay){
-        let weekList = [];
-        for (let i=0; i<7; i++){
-          const now2 = new Date(time)
-          // 从周一到周日
-          const currDate = now2.getDay() === 0 ? 6 : now2.getDay() - 1
-          now2.setDate(day - currDate + i + num)
-          // console.log(this.data.selectDay.day, currDate, i)
-          // console.log(now2.getFullYear(), now2.getMonth(), now2.getDate())
-          let obj = {};
-          obj = {
-            day: now2.getDate(),
-            month: now2.getMonth() + 1,
-            year: now2.getFullYear(),
-            dateString: that.formatTime(now2, "Y-M-D"),
-          };
-
-          weekList[i] = obj;
-          
-        }
-        // console.log(weekList)
-        return weekList
-      }
-
-      preWeekList = getWeekList(-7)
-      currWeekList = getWeekList(0)
-      nextWeekList = getWeekList(7)
+      preWeekList = this.getWeekList(-7, now, setDay)
+      currWeekList = this.getWeekList(0, now, setDay)
+      nextWeekList = this.getWeekList(7, now, setDay)
       
       
       this.setData({
@@ -126,7 +127,7 @@ Component({
       // this.setData({
       //   currWeekList
       // })
-          
+      this.setSpot()
     },
     // 日期点击事件
     selectDayChange(e){
@@ -151,10 +152,60 @@ Component({
   },
 
   swiperChange(e){
+    const current = e.detail.current
+    const currentNum = this.data.currentNum
+    this.setData({
+      currentNum: current
+    })
+    // 手指向右滑
+    
+    if (current - currentNum == 2 || current - currentNum == -1){
+      console.log("手指向左滑")
+      this.changeSelectDay(-7)
+    } else {
+      console.log("手指向右滑")
+      this.changeSelectDay(7)
+    }
+    
+    console.log(this.data.selectDay)
+    
+  },
 
+  changeSelectDay(num){
+    let now = new Date(this.data.selectDay.year, this.data.selectDay.month - 1, this.data.selectDay.day + num)
+      let selectDay = {};
+      selectDay = {
+          day: now.getDate(),
+          month: now.getMonth() + 1,
+          year: now.getFullYear(),
+          dateString: this.formatTime(now, "Y-M-D"),
+        };
+      this.setData({
+        selectDay
+      })
+  },
+
+  // 设置日历底下是否展示小圆点
+  setSpot(){
+    let spotArr = this.data.spot
+    let weekList = this.data.weekList
+    // 使用for...in...遍历对象
+    // week 返回字符串 为 weekList 中的所有key 通过obj[key]获取对应value
+    for(let week in weekList){
+      // 遍历数组使用forEach方法
+      weekList[week].forEach(date => {
+        spotArr.forEach(item => {
+          let tagDate = this.formatTime(item[0],"Y-M-D")
+          if(tagDate==date.dateString){
+            date.spot = item[1]
+          }
+        })
+      })
+    }
+    this.setData({
+      weekList
+    })
   }
-
-
 
 
   },
@@ -169,7 +220,9 @@ Component({
         dateString: this.formatTime(now, "Y-M-D")
       }
       this.setData({
-        selectDay
+        selectDay,
+        // 初始化基本都是当天
+        today: selectDay.dateString
       })
       this.dateInit()
     }

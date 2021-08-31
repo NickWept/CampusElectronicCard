@@ -41,6 +41,11 @@ Page({
     // 关闭选择器
     this.closeActionSheet()
   },
+
+  // 已阅读勾选监听
+  radioChange(e){
+    console.log(e.detail.value)
+  },
   
   /**
    * 生命周期函数--监听页面加载

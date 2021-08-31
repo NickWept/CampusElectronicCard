@@ -12,10 +12,10 @@
   </view>
   <!-- 日期 -->
   <view class="flex-start flex-wrap calendar-main">
-    <swiper current="{{currentNum}}" bindchange="swiperChange">
+    <swiper current="{{currentNum}}" circular="true" bindchange="swiperChange">
       <swiper-item wx:for="{{weekList}}" wx:key="weekList" wx:for-item="week">
         <view wx:for="{{week}}" wx:key="week" class="day">
-          <view class="bg {{(item.year === selectDay.year && item.month === selectDay.month) ? (item.day === selectDay.day ? 'select' : '') : 'other-month'}}" catchtap="selectDayChange" data-day="{{item.day}}" data-year="{{item.year}}" data-month="{{item.month}}" data-date-string="{{item.dateString}}">{{item.day}}</view>
+          <view class="bg {{(item.year === selectDay.year && item.month === selectDay.month) ? (item.day === selectDay.day ? 'select' : '') : 'other-month'}}" catchtap="selectDayChange" data-day="{{item.day}}" data-year="{{item.year}}" data-month="{{item.month}}" data-date-string="{{item.dateString}}">{{(item.dateString === today) ? '今' : item.day}}</view>
           <view class="spot" style="background-color: {{item.spot}};"></view>
         </view>
       </swiper-item>
