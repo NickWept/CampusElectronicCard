@@ -10,7 +10,8 @@ Page({
     // 表单信息
     formInfo: {
       bank:''
-    }
+    },
+    readRadio: false
   },
   showModal:function(){
     this.setData({
@@ -43,8 +44,11 @@ Page({
   },
 
   // 已阅读勾选监听
-  radioChange(e){
-    console.log(e.detail.value)
+  radioChange(){
+    this.setData({
+      readRadio: !this.data.readRadio
+    })
+    console.log(this.data.readRadio)
   },
   
   /**

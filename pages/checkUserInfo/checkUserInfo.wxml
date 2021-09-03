@@ -58,9 +58,7 @@
     </view>
     <view class="auth">
       <view>
-        <radio-group bindchange="radioChange">
-          <radio value="r1" color="#66e9b5"/>
-        </radio-group>
+        <radio bindtap="radioChange" value="r1" checked="{{readRadio}}" color="#66e9b5"/>
       </view>
       <text>我已阅读<text class="sq">《电子II、III类用户服务协议》、《个人银行结算账户跨行收费服务协议》、《人脸快捷支付业务服务协议》</text>并同意相关内容</text>
     </view>
