@@ -29,7 +29,8 @@ Component({
       day: '',
       dateString: '',
     },
-    today: '', // 当天
+    // 当天
+    today: '', 
     currentNum: 1, // 日历位置
   },
 
@@ -106,27 +107,6 @@ Component({
         }
       })
       
-      // ==========================我是分割线================================
-      // 下面是显示周日到周六的代码，只有一个当前周
-      // let currWeekList = [];
-      // let now = new Date(setYear, setMonth - 1)
-      // let startWeek = now.getDay();
-      // for(let i=0; i<7; i++){
-      //   // 从周日到周六
-      //   const now2 = new Date(now) 
-      //   now2.setDate(Math.ceil((this.data.selectDay.day + startWeek) / 7) * 7 - 6 - startWeek + i)
-      //   let obj = {};
-      //     obj = {
-      //       day: now2.getDate(),
-      //       month: now2.getMonth() + 1,
-      //       year: now2.getFullYear(),
-      //       dateString: this.formatTime(now2, "Y-M-D")
-      //     };
-      //     currWeekList[i] = obj;
-      // }
-      // this.setData({
-      //   currWeekList
-      // })
       this.setSpot()
     },
     // 日期点击事件
@@ -143,34 +123,94 @@ Component({
       }
       if(this.data.selectDay.year !== year || this.data.selectDay.month !== month) {
         this.dateInit()
-      } else if (this.data.selectDay.day !== day){
-        this.setData({
-          selectDay
-        })
       }
-      console.log(year+"年"+month+"月"+day+"日")
+      this.setData({
+        selectDay
+      })
+      // console.log(year+"年"+month+"月"+day+"日")
+
+      // 给父组件传参数
+      const time = new Date(year,month-1,day)
+      const date = this.formatTime(time, "Y-M-D")
+      this.triggerEvent('selectDayChange', date)
   },
 
+  // 左右滑动监听
   swiperChange(e){
     const current = e.detail.current
     const currentNum = this.data.currentNum
     this.setData({
       currentNum: current
     })
-    // 手指向右滑
-    
+
+    // console.log(current)
     if (current - currentNum == 2 || current - currentNum == -1){
-      console.log("手指向左滑")
+      // console.log("手指向左滑")
       this.changeSelectDay(-7)
+      const now = new Date(this.data.selectDay.year, this.data.selectDay.month-1, this.data.selectDay.day)
+      if(current == 0){
+        this.setData({
+          weekList:{
+            preWeekList: this.data.weekList.preWeekList,
+            currWeekList: this.data.weekList.currWeekList,
+            nextWeekList: this.getWeekList(-7, now, this.data.selectDay.day)
+          }
+        })
+      } else if (current == 2){
+        this.setData({
+          weekList: {
+            preWeekList: this.data.weekList.preWeekList,
+            currWeekList: this.getWeekList(-7, now, this.data.selectDay.day),
+            nextWeekList: this.data.weekList.nextWeekList
+          }
+        })
+      } else {
+        this.setData({
+          weekList: {
+            preWeekList: this.getWeekList(-7, now, this.data.selectDay.day),
+            currWeekList: this.data.weekList.currWeekList,
+            nextWeekList: this.data.weekList.nextWeekList
+          }
+        })
+      }
     } else {
-      console.log("手指向右滑")
+      // console.log("手指向右滑")
       this.changeSelectDay(7)
+      const now = new Date(this.data.selectDay.year, this.data.selectDay.month-1, this.data.selectDay.day)
+      if(current == 2){
+        this.setData({
+          weekList: {
+            preWeekList: this.getWeekList(7, now, this.data.selectDay.day),
+            currWeekList: this.data.weekList.currWeekList,
+            nextWeekList: this.data.weekList.nextWeekList
+          }
+        })
+      } else if (current == 0){
+        this.setData({
+          weekList: {
+            preWeekList: this.data.weekList.preWeekList,
+            currWeekList: this.getWeekList(7, now, this.data.selectDay.day),
+            nextWeekList: this.data.weekList.nextWeekList
+          }
+        })
+      } else {
+        this.setData({
+          weekList: {
+            preWeekList: this.data.weekList.preWeekList,
+            currWeekList: this.data.weekList.currWeekList,
+            nextWeekList: this.getWeekList(7, now, this.data.selectDay.day)
+          }
+        })
+      }
     }
     
-    console.log(this.data.selectDay)
+    this.setSpot()
+    // console.log(this.data.selectDay)
+    // console.log(this.data.weekList)
     
   },
 
+  // 滑动时修改选中日期
   changeSelectDay(num){
     let now = new Date(this.data.selectDay.year, this.data.selectDay.month - 1, this.data.selectDay.day + num)
       let selectDay = {};
@@ -179,10 +219,16 @@ Component({
           month: now.getMonth() + 1,
           year: now.getFullYear(),
           dateString: this.formatTime(now, "Y-M-D"),
-        };
+      };
       this.setData({
         selectDay
       })
+      // console.log(selectDay.year+"年"+selectDay.month+"月"+selectDay.day+"日")
+
+      // 给父组件传参
+      const time = new Date(selectDay.year,selectDay.month-1,selectDay.day)
+      const date = this.formatTime(time, "Y-M-D")
+      this.triggerEvent('selectDayChange', date)
   },
 
   // 设置日历底下是否展示小圆点
@@ -225,6 +271,8 @@ Component({
         today: selectDay.dateString
       })
       this.dateInit()
+      console.log(this.data.selectDay)
+      console.log(this.data.weekList)
     }
   },
   observers: {
