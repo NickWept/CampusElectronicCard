@@ -1,6 +1,7 @@
-// pages/calendar/calendar.js
+var startX, endX;
+var moveFlag = true; //判断执行滑动事件
 Page({
-
+  
   /**
    * 页面的初始数据
    */
@@ -9,7 +10,6 @@ Page({
     open: true,
     selectDay: {},
   },
-
   
   onLoad: function (options) {
     let now = new Date()
@@ -183,5 +183,32 @@ Page({
       })
     }
     console.log(year+"年"+month+"月"+day+"日")
+  },
+
+  // 滑动事件
+  touchStart: function(e){
+    startX = e.touches[0].pageX; //获取触摸时的原点
+    // console.log(startX)
+    moveFlag = true
+  },
+  touchMove: function(e){
+    endX = e.touches[0].pageX;
+    // console.log(endX)
+    if(moveFlag){
+      if(endX - startX > 50){
+        // console.log("move right")
+        this.lastMonth()
+        moveFlag = false
+      } 
+      
+      if (startX - endX > 50){
+        // console.log("move left")
+        this.nextMonth()
+        moveFlag = false
+      }
+    }
+  },
+  touchEnd: function(e){
+    moveFlag = true
   }
 })

@@ -262,13 +262,13 @@ button {
   overflow: auto;
 }
 
-.banks .bankname{
+.banks .name{
   height: 80rpx;
   line-height: 80rpx;
   text-align: center;
   border: rgba(128, 128, 128, 0.2) solid 0.5rpx;
 }
-.banks .bankname > text {
+.banks .name > text {
   color: #fa8f28;
 }
 

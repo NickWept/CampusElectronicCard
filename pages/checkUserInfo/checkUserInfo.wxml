@@ -4,14 +4,14 @@
       <view class="num active">1</view>
       <text>验证用户身份</text>
     </view>
-    <view class="item">
-      <view class="num">2</view>
+    <view class="item" bindtap="stepTwoActive">
+      <view class="num {{stepTwo?'active':''}}">2</view>
       <text>激活完成</text>
     </view>
   </view>
   <view class="content">请为您的电子校园卡开通电子账户，作为在校消费微信扣款来源请使用<text>当前微信实名认证本人</text>的银行卡进行以下操作
   </view>
-  <view class="card">
+  <view class="card" bindtap="openStudentActionsheet">
     <image mode="center" src="/static/img/indexBackgroundImg.png"></image>
     <view class="title">
       <text class="schoolname">唐河谢岗实验学校</text>
@@ -27,12 +27,12 @@
   <view class="part1">
     <view class="box">
       <view>银行名称</view>
-      <input type="text" value="{{formInfo.bank}}" bindtap="openActionsheet"  placeholder-class="placeholder-css" placeholder="请选择银行"/>
+      <input type="text" value="{{formInfo.bank}}" bindtap="openBankActionsheet"  placeholder-class="placeholder-css" placeholder="请选择银行"/>
     </view>
     <view class="box nobottom">
       <view>银行卡号<text class="icon-wenhao"></text></view>
       <input type="number" placeholder-class="placeholder-css" placeholder="请输入储蓄卡号"/>    
-      <text class="icon-xiangji_huaban"></text>
+      <!-- <text class="icon-xiangji_huaban"></text> -->
     </view>
   </view>
   
@@ -68,19 +68,29 @@
   </view>
 </form>
 <!-- showActionsheet -->
-<my-actionSheet bindactiontap="closeActionSheet" show="{{showActionsheet}}">
+<my-actionSheet bindactiontap="closeActionSheet" show="{{showBankActionsheet}}">
   <view class="sheet">
     <view class="blod">选择银行</view>
     <view class="banks" bindtap="bankSelect">
-      <view class="bankname" data-name="中国银行">中国银行<text data-name="中国银行" class="icon-tuijian"></text></view>
-      <view class="bankname" data-name="农业银行">农业银行<text data-name="农业银行" class="icon-tuijian"></text></view>
-      <view class="bankname" data-name="工商银行">工商银行<text data-name="工商银行" class="icon-tuijian"></text></view>
-      <view class="bankname" data-name="建设银行">建设银行<text data-name="建设银行" class="icon-tuijian"></text></view>
-      <view class="bankname" data-name="浦发银行">浦发银行</view>
-      <view class="bankname" data-name="光大银行">光大银行</view>
-      <view class="bankname" data-name="中央银行">中央银行</view>
+      <view class="name" data-name="中国银行">中国银行<text data-name="中国银行" class="icon-tuijian"></text></view>
+      <view class="name" data-name="农业银行">农业银行<text data-name="农业银行" class="icon-tuijian"></text></view>
+      <view class="name" data-name="工商银行">工商银行<text data-name="工商银行" class="icon-tuijian"></text></view>
+      <view class="name" data-name="建设银行">建设银行<text data-name="建设银行" class="icon-tuijian"></text></view>
+      <view class="name" data-name="浦发银行">浦发银行</view>
+      <view class="name" data-name="光大银行">光大银行</view>
+      <view class="name" data-name="中央银行">中央银行</view>
     </view>
     <view class="cancel">取消</view>
+  </view>
+
+</my-actionSheet>
+
+<my-actionSheet show="{{showStudentActionsheet}}">
+  <view class="sheet">
+    <view class="blod">选择学生</view>
+    <view class="banks" bindtap="studentSelect">
+      <view class="name" wx:for="{{studentList}}" data-student_id="{{item.studentId}}">{{item.className}}——{{item.studentName}}</view>
+    </view>
   </view>
 
 </my-actionSheet>
