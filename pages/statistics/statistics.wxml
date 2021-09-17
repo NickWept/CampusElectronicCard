@@ -1,1 +1,16 @@
-<myCalendar bindselectDayChange="getChangeDate"></myCalendar>
+<view class="flex">
+  <view class="title active">考勤记录</view>
+  <view class="title">考勤统计</view>
+</view>
+<view class="tips">
+  <text class="icon-gantanhao icon"></text>
+  <text>为保护个人隐私，照片将于72小时后失效</text>
+</view>
+<myCalendar bindselectDayChange="getChangeDate">
+  <view class="spot">
+    <text class="blue">正常</text>
+    <text class="yellow">请加</text>
+    <text class="red">异常</text>
+    <text class="grey">非考勤时间</text>
+  </view>
+</myCalendar>

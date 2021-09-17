@@ -72,17 +72,10 @@
   <view class="sheet">
     <view class="blod">选择银行</view>
     <view class="banks" bindtap="bankSelect">
-      <view class="name" data-name="中国银行">中国银行<text data-name="中国银行" class="icon-tuijian"></text></view>
-      <view class="name" data-name="农业银行">农业银行<text data-name="农业银行" class="icon-tuijian"></text></view>
-      <view class="name" data-name="工商银行">工商银行<text data-name="工商银行" class="icon-tuijian"></text></view>
-      <view class="name" data-name="建设银行">建设银行<text data-name="建设银行" class="icon-tuijian"></text></view>
-      <view class="name" data-name="浦发银行">浦发银行</view>
-      <view class="name" data-name="光大银行">光大银行</view>
-      <view class="name" data-name="中央银行">中央银行</view>
+      <view class="name" wx:for="{{bankListSelect}}" data-name="{{item.bankName}}">{{item.bankName}}<text wx:if="{{item.TJ}}" data-name="{{item.bankName}}" class="icon-tuijian"></text></view>
     </view>
     <view class="cancel">取消</view>
   </view>
-
 </my-actionSheet>
 
 <my-actionSheet show="{{showStudentActionsheet}}">

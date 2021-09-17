@@ -14,7 +14,15 @@ Page({
       bank:''
     },
     readRadio: false,
-
+    bankListSelect: [
+      {bankName: '中国银行', TJ: true},
+      {bankName: '农业银行', TJ: true},
+      {bankName: '工商银行', TJ: true},
+      {bankName: '建设银行', TJ: true},
+      {bankName: '浦发银行'},
+      {bankName: '光大银行'},
+      {bankName: '中央银行'},
+    ],
     studentList: [
               {
                   "studentId": 5,

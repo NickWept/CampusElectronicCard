@@ -27,10 +27,12 @@
 }
 
 .calendar .calendar-main {
-  padding: 30rpx 25rpx;
+  padding: 30rpx 25rpx 10rpx 25rpx;
   transition: height 0.3s;
   align-content: flex-start;
   overflow: hidden;
+  height: 72rpx;
+  line-height: 72rpx;
 }
 
 .calendar .calendar-main .day {

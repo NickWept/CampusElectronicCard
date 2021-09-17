@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "考勤统计",
   "usingComponents": {
     "myCalendar":"/components/myCalendar/myCalendar"
   }

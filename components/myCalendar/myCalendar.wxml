@@ -21,4 +21,5 @@
       </swiper-item>
     </swiper>
   </view>
+  <slot></slot>
 </view>

@@ -1,1 +1,82 @@
-/* pages/statistics/statistics.wxss */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 34rpx;
+  padding: 35rpx;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100rpx;
+  height: 8rpx;
+  border-radius: 20rpx;
+  background-color: white;
+}
+
+.active {
+  color: #13d4bf;
+}
+.active::before {
+  background-color: #13d4bf;
+}
+
+.tips{
+  text-align: center;
+  background-color: #fff4d8;
+  font-size: 27rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #ff744b;
+}
+
+.icon {
+  font-size: 27rpx;
+  margin-right: 15rpx;
+}
+
+.spot {
+  font-size: 24rpx;
+  text-align: center;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.spot > text {
+  padding: 0 20rpx;
+  margin-left: 20rpx;
+  position: relative;
+}
+
+.spot > text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 17rpx;
+  height: 17rpx;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.spot > .blue::before {
+  background-color: #56acf6;
+}
+.spot > .yellow::before {
+  background-color: #fbcf4d;
+}
+.spot > .red::before {
+  background-color: #fb565e;
+}
+.spot > .grey::before {
+  background-color: #afabac;
+}
